@@ -1,0 +1,24 @@
+input{
+	padding: 15px;
+	color: #ffffff;
+	background-color: #000000;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+}
+
+body{
+	background-color: black;
+	color: white;
+	margin: 10%;
+	border-style: solid;
+	padding: 5%;
+}
+
+h1{
+	color: #cec0ff
+}	
+
+h2{
+	color: #eeeeff
+}	
