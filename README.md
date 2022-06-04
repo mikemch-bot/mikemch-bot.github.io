@@ -2,4 +2,4 @@
 
 打开[该链接](https://mikemch-bot.github.io)以查看网页。
 
-[这是一个聊天室](https://mikemch-bot.github.io/chatroom)，可以在里面发送信息。
+[这是一个聊天室](https://mikemch-bot.github.io/chatter)，可以在里面发送信息。
