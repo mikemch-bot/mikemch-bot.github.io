@@ -7,10 +7,18 @@ input{
 	border-radius: 5px;
 }
 
+a:link{
+	padding: 15px;
+	color: #ffcdff;
+	background-color: #000000;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+}
+
 body{
 	background-color: black;
 	color: white;
-	margin: 10%;
 	border-style: solid;
 	padding: 5%;
 }
@@ -21,4 +29,21 @@ h1{
 
 h2{
 	color: #eeeeff
-}	
+}
+
+.talk{
+	background-color: #150202;
+	border-style: solid;
+	border-color: #a389bc;
+	
+	padding: 10px;
+	padding-left: 30px;
+	border-radius: 10px;
+	margin: 2% 10% 2% 5%;
+}
+
+.nickname{
+	font-size: 20px;
+	font-weight: bolder;
+	color: #d3c9fc;
+}

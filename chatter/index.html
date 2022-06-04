@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>欢迎在此处联系我</title>
+<title>聊天室</title>
 <link rel="stylesheet" href="./chatterstyle.css">
 </head>
 
@@ -10,9 +10,43 @@
 <form action="savechat.php" method="post">
 	昵称: <input type="text" name="nickname">
 	<br>
-	内容: <input type="text" name="content" style="width: 500pt">
+	内容: <input type="text" name="content" style="width: 80%">
 	<input type="submit" value="发送">
 </form>
+
+<br/>
+
+<?php
+
+$dbhost = 'localhost';  
+$dbuser = 'debian-sys-maint';          
+$dbpass = 'py9dYFCTkZzOfkqN';    
+$dbname = 'testforum';
+
+
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+
+if(!$conn){
+	die('连接失败: '.mysql_error($conn));
+}
+
+$sql="SELECT nickname,content FROM forum";
+$forumtalks=mysqli_query($conn,$sql);
+
+if (mysqli_num_rows($forumtalks) > 0) {
+	while($row=mysqli_fetch_assoc($forumtalks)){
+		echo "<div class=\"talk\">";
+		echo "<p class=\"nickname\">".$row["nickname"]."</p>";
+		echo "<p class=\"content\">".$row["content"]."</p>";
+		echo "</div>";
+	}
+} 
+else{
+    echo "目前无人发送信息";
+}
+
+?>
 
 </body>
 
